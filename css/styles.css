@@ -1,0 +1,116 @@
+
+/* Universal selector (*) */
+* {
+    color: red;
+    font-size: 28px;
+}
+
+/* PSUEDO- CLASSES SELECTOR*/
+a:hover {
+    background-color: yellow;
+}
+
+/* Tag selector*/
+p {
+    color: blue;
+}
+
+/*CLASS SELECTOR*/
+.highlights {
+    color: green;
+}
+
+/* ID selector */
+#header {
+    background-color: green;
+}
+
+
+h1 {
+    color: olivedrab;
+}
+
+/* Selected Article, and P's underneath to give them a specific color*/
+article p {
+    color: pink;
+}
+
+/* if u want the h2 underneath article to be a different color then all the others*/
+article h2 {
+    color: darkblue;
+}
+
+/* CHILD SELECTOR - SELECT DIRECT CHILD, STRAIGHT AFTER PARENT -  select the brother, right after it - direct child of a specific element*/
+ul > li {
+    list-style-type: square;
+}
+
+/* This is how you select sibling aswell - SIBLING SELECTOR-*/
+h2 + p {
+    background-color:brown ;
+}
+
+/* How to select any brother*/
+ h2 ~ p {
+     background-color: lightblue;
+ }
+
+ /* ATTRIBUTE SELECTOR*/
+input[type="text"] {
+    color: brown;
+    font-size: 18px;
+    border-color: palegreen;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    font-size: 18px;
+    color: black;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+ul li:last-child {
+    background-color: green;
+}
+/* SELECT BY CHILD NUMBER*/
+ul li:nth-child(2) {
+    background-color: lightblue;
+}
+ul li:first-child {
+    background-color: darkred;
+}
+
+p::before {
+    content: "EMOJI";
+
+
+
+
+
+
+
+
+
+/* GROUP SELECTOR*/
+
+h1,h2 & p {
+    font-family:Monaco,Serif;
+}
+
+/* How to make the FIRST letter in a P BIG - this will select all, so you should create a class, if u want it for a specific p*/
+
+p.dummy::first-letter {
+    font-size: 48px;
+    initial-letter: 2;  /* how many lines it takes*/
+}
+
+/*
+p:: before {
+    content:"EMOJI";
+}
+
+p:: after {
+ content:"EMOJI";
+ */
+
